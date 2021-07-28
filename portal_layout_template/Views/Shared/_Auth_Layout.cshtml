@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.ParentPage - Portal</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="~/Content/icheck-bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/adminlte.min.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="#"><b>Example</b>Portal</a>
+        </div>
+        <!-- /.login-logo -->
+        <div class="card">
+            <div class="card-body login-card-body">
+                @RenderBody()
+            </div>
+            <!-- /.login-card-body -->
+        </div>
+    </div>
+    <!-- /.login-box -->
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/layout/adminlte.js"></script>
+</body>
+</html>
